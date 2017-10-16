@@ -1,8 +1,86 @@
 body {
-    direction: ltr;
-    text-align: left;
-    font-family: 'Indie Flower';
-  }
+  direction: rtl;
+  text-align: right;
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+.hdr-frm {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+.hdr {
+  width: 900px;
+  height: 100px;
+  margin: 0 auto;
+}
+.hmnu {
+  
+}
+.hmnu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hmnu ul li {
+  display: inline;
+}
+.hmnu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}  
+.right-most {
+  float: right;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clm {
+  float: right;
+  padding: 1%;
+  width: 300px;
+}
+.pct-25 {
+  width: 25%;
+}
+.fxd-btm-frm {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+.fxd-btm {
+  width: 900px;
+  height: 50px;
+  margin: 0 auto;
+}
+.bg-img {
+  position: relative;
+}
+.bg-img img {
+  border-bottom-right-radius: 20px;
+}
+.txt-on-bg-img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 250px;
+  background-color: rgba(128, 128, 128, 0.7);
+  color: white;
+  border-bottom-right-radius: 20px;
+}
   h1 {
     font-family: tahoma;
     font-size: 48px;

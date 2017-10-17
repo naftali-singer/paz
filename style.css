@@ -9,34 +9,41 @@ body {
   padding: 0;
 }
 .hdr-frme {
+  position: relative;
   background-color: gray;
+  width: 100%;
+  height: 100px;
   margin: 0;
   padding: 0;
 }
+main {
+  position: absolute;
+  top: 0;
+  width: 930px;
+  margin-right: 100px;
+/*  margin: auto; */
+  border: 0;
+  margin-bottom: 150px;
+}
+
 .clm-logo {
-/*  position: relative; */
   float: right;
   width: 150px;
+  margin: 0 0 0 2px;
 }
 .clm-non-logo {
-/*  position: relative;
-  margin-right: 150px; */
   float: right;
   width: 750px;
+  margin: 0 2px 0 0;
 }
 .logo {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .non-mnu {
   display: inline;
+  color: white;
   padding: 20px;
 }
-.hdr {
-  width: 900px;
-  height: 200px;
-  margin: 0 auto;
-}
-
 
 .hmnu ul {
   list-style: none;
@@ -67,8 +74,9 @@ body {
   background-color: gray;
   display: none;
   position: absolute;
-  top: 20px;
+  top: 12px;
   right: 0;
+  z-index: 1;
 }
 .sbmnu ul {
   list-style: none;
@@ -86,7 +94,7 @@ body {
 }
   
 
-.main {
+.artcl-frme {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -100,15 +108,6 @@ body {
   width: 300px;
   margin: 4px;
   padding: 2px;
-}
-.pct-10 {
-  width: 10%;
-}
-.pct-90 {
-  width: 90%;
-}
-.pct-33 {
-  width: 33%;
 }
 
 .bg-img {
@@ -128,7 +127,6 @@ body {
 }
 .bg-cube {
   position: relative;
-  height: 100%;
   border-top-right-radius: 20px;
 }
 .cube {
@@ -136,11 +134,22 @@ body {
   top: 0;
   right: 20px;
 }
-
+.cube h5 {
+  display: block;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cube img {
+  display: block;
+  padding: 0;
+  margin-top: 20px;
+}
 .cube p {
   display: block;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
 }
 .clm-sttn {
   float: right;
@@ -156,6 +165,8 @@ body {
 }
 .clm-sttn-mp img {
   background-color: none;
+  padding: 0;
+  margin-top: 10px;
 }
 .fxd-btm-frm {
   position: fixed;

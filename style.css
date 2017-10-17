@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   direction: rtl;
   text-align: right;
@@ -5,39 +8,87 @@ body {
   margin: 0;
   padding: 0;
 }
-.hdr-frm {
+.hdr-frme {
   background-color: gray;
   margin: 0;
   padding: 0;
 }
+.clm-logo {
+/*  position: relative; */
+  float: right;
+  width: 150px;
+}
+.clm-non-logo {
+/*  position: relative;
+  margin-right: 150px; */
+  float: right;
+  width: 750px;
+}
+.logo {
+  margin-top: 50px;
+}
+.non-mnu {
+  display: inline;
+  padding: 20px;
+}
 .hdr {
   width: 900px;
-  height: 100px;
+  height: 200px;
   margin: 0 auto;
 }
-.hmnu {
-  
-}
+
+
 .hmnu ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 40px;
 }
 .hmnu ul li {
   display: inline;
+  border-left: 1px solid white;
+}
+.hmnu ul li:last-child {
+  border-left: 0;
 }
 .hmnu ul li a {
-  display: inline-block;
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding: 6px;
 }
-nav ul li a:hover {
+.hmnu ul li a:hover {
   text-decoration: underline;
   color: blue;
-}  
-.right-most {
-  float: right;
+}
+
+.hmnu-i {
+  position: relative;
+}
+.sbmnu {
+  background-color: gray;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.sbmnu ul {
+  list-style: none;
+}
+.sbmnu li a {
+  text-decoration: none;
+  color: white;
+}
+.hmnu-i:hover .sbmnu {
+  display: block;
+}
+.sbmnu ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+  
+
+.main {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .row::after {
   content: "";
@@ -46,26 +97,20 @@ nav ul li a:hover {
 }
 .clm {
   float: right;
-  padding: 1%;
   width: 300px;
+  margin: 4px;
+  padding: 2px;
 }
-.pct-25 {
-  width: 25%;
+.pct-10 {
+  width: 10%;
 }
-.fxd-btm-frm {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background-color: gray;
-  margin: 0;
-  padding: 0;
+.pct-90 {
+  width: 90%;
 }
-.fxd-btm {
-  width: 900px;
-  height: 50px;
-  margin: 0 auto;
+.pct-33 {
+  width: 33%;
 }
+
 .bg-img {
   position: relative;
 }
@@ -81,19 +126,79 @@ nav ul li a:hover {
   color: white;
   border-bottom-right-radius: 20px;
 }
-  h1 {
-    font-family: tahoma;
-    font-size: 48px;
-    text-align: center;
-  }
-  h2 {
-    font-size: 1em;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px #FF0000;
-  }
-  p {
-    font-size: 0.5em;
-    word-spacing: 10px;
-    letter-spacing: 2px;
-    line-height: 150%;
-  }
+.bg-cube {
+  position: relative;
+  height: 100%;
+  border-top-right-radius: 20px;
+}
+.cube {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.cube p {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.clm-sttn {
+  float: right;
+  width: 150;
+}
+.clm-sttn ul {
+  padding: 0px 10px 0px 80px;
+  list-style: none;
+}
+.clm-sttn-mp {
+  float: left;
+  width: 150;
+}
+.clm-sttn-mp img {
+  background-color: none;
+}
+.fxd-btm-frm {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+.fxd-btm {
+  width: 900px;
+  height: 60px;
+  margin: 0 auto;
+}
+.fmnu {
+}
+.fmnu ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+.fmnu ul li {
+  display: inline;
+  border-left: 2px solid white;
+}
+.fmnu ul li:last-child {
+  display: inline;
+  border-left: 0;
+}
+.fmnu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+}
+.fmnu ul li a img {
+  padding-top: 3px;
+}
+.fmnu ul li:last-child a {
+  color: red;
+}
+.fmnu ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}

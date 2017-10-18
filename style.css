@@ -10,7 +10,7 @@ body {
 }
 .hdr-frme {
   position: relative;
-  background-color: gray;
+  background: linear-gradient(rgb(144,144,144) 85%, rgb(170,170,170));
   width: 100%;
   height: 100px;
   margin: 0;
@@ -40,6 +40,11 @@ main {
   margin-top: 30px;
 }
 .non-mnu {
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.non-mnu-i {
   display: inline;
   color: white;
   padding: 20px;
@@ -48,14 +53,14 @@ main {
 .hmnu ul {
   list-style: none;
   margin: 0;
-  padding: 40px;
+  padding: 6px;
 }
 .hmnu ul li {
   display: inline;
-  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
-.hmnu ul li:last-child {
-  border-left: 0;
+.hmnu ul li:first-child {
+  border-right: 0;
 }
 .hmnu ul li a {
   text-decoration: none;
@@ -70,25 +75,31 @@ main {
 .hmnu-i {
   position: relative;
 }
-.sbmnu {
-  background-color: gray;
+.hmnu-i .sbmnu {
+  background: linear-gradient(rgb(170,170,170) 10%, rgb(144,144,144));
   display: none;
   position: absolute;
-  top: 12px;
+  margin: 0;
+  padding: 0;
+  top: 20px;
   right: 0;
   z-index: 1;
 }
-.sbmnu ul {
-  list-style: none;
+.hmnu-i .sbmnu ul {
+/*  list-style-type: none; */
 }
-.sbmnu li a {
+.hmnu-i .sbmnu ul li {
+  border: 0;
+  border-top: 1px dotted white;
+}
+.hmnu-i .sbmnu ul li a {
   text-decoration: none;
   color: white;
 }
 .hmnu-i:hover .sbmnu {
   display: block;
 }
-.sbmnu ul li a:hover {
+.hmnu-i .sbmnu ul li a:hover {
   text-decoration: underline;
   color: blue;
 }

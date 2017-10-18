@@ -11,7 +11,7 @@ body {
 }
 .hdr-frme {
   position: relative;
-  background: linear-gradient(rgb(144,144,144) 85%, rgb(170,170,170));
+  background: linear-gradient(rgb(144,144,144) 85%, rgb(180,180,180));
   width: 100%;
   height: 100px;
   margin: 0;
@@ -62,60 +62,70 @@ main {
   padding: 0;
 }
 
-.hmnu ul {
-  list-style: none;
-  margin: 0;
-  padding: 6px;
+nav {
+  font-size: 120%;
+  font-weight: bold;
 }
-.hmnu ul li {
+.hmnu > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hmnu > ul > li {
   display: inline;
   border-right: 1px solid white;
 }
-.hmnu ul li:first-child {
+.hmnu > ul > li:first-child {
   border-right: 0;
 }
-.hmnu ul li a {
+.hmnu > ul > li > a {
+  display: inline-block;
   text-decoration: none;
   color: white;
-  padding: 6px;
+  padding: 9px 13px;
 }
-.hmnu ul li a:hover {
+.hmnu > ul > li > a:hover {
   text-decoration: underline;
   color: blue;
 }
-
-.hmnu-i {
+.hmnu-wv {
   position: relative;
 }
-.hmnu-i .sbmnu {
-  background: linear-gradient(rgb(170,170,170) 10%, rgb(144,144,144));
+.hmnu-wv:hover .vmnu {
+  display: block;
+}
+.vmnu {
   display: none;
   position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 20px;
   right: 0;
   z-index: 1;
+  background-color: rgb(144,144,144);
+  width: 170px;
 }
-.hmnu-i .sbmnu ul {
-/*  list-style-type: none; */
+.vmnu > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.hmnu-i .sbmnu ul li {
+.vmnu > ul > li {
   border: 0;
   border-top: 1px dotted white;
 }
-.hmnu-i .sbmnu ul li a {
+.vmnu > ul > li:first-child {
+  border-top: 0;
+  background: linear-gradient(rgb(180,180,180) 15%, rgb(144,144,144));
+}
+.vmnu > ul > li > a {
+  display: block;
   text-decoration: none;
   color: white;
+  padding: 8px;
 }
-.hmnu-i:hover .sbmnu {
-  display: block;
-}
-.hmnu-i .sbmnu ul li a:hover {
+.vmnu > ul > li > a:hover {
   text-decoration: underline;
   color: blue;
+  background-color: lightgray;
 }
-  
 
 .artcl-frme {
   margin: 0;
@@ -206,6 +216,7 @@ main {
   padding: 0;
   margin-top: 10px;
 }
+
 .fxd-btm-frm {
   position: fixed;
   bottom: 0;
@@ -226,31 +237,30 @@ main {
 .fmnu {
   font-size: 110%;
 }
-.fmnu ul {
+.fmnu > ul {
   list-style: none;
   margin: 0;
   padding-top: 8px;
 }
-.fmnu ul li {
+.fmnu > ul > li {
   display: inline;
   border-right: 2px solid white;
   padding: 0 5px;
 }
-.fmnu ul li:first-child {
-  display: inline;
+.fmnu > ul > li:first-child {
   border-right: 0;
 }
-.fmnu ul li a {
+.fmnu > ul > li > a {
   display: inline-block;
   text-decoration: none;
   color: white;
 }
-.fmnu ul li a img {
-}
-.fmnu ul li:last-child a {
+.fmnu > ul > li:last-child > a {
   color: red;
 }
-.fmnu ul li a:hover {
+.fmnu > ul > li > a:hover {
   text-decoration: underline;
   color: blue;
+}
+.fmnu > ul > li > a > img {
 }

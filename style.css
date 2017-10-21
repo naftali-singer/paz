@@ -199,6 +199,15 @@ nav {
   margin: 0;
   margin-top: 20px;
 }
+#cube-rtt1 {
+  display: block;
+}
+#cube-rtt2 {
+  display: none;
+}
+#cube-rtt3 {
+  display: none;
+}
 .clm-sttn {
   float: right;
   width: 170px;
